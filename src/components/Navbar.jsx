@@ -1,7 +1,8 @@
 // src/components/Navbar.jsx
 import React, { useState } from 'react';
 import { Phone, Menu as MenuIcon } from 'lucide-react';
-import { ReactComponent as Logo } "../assets/logo.png";
+import Logo from "../assets/1.png";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
