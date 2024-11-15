@@ -20,43 +20,71 @@ const ContactForm = () => {
   };
 
   return (
-   <div className="min-h-screen pt-20 pb-16 bg-gray-50 my-20">
+   <div className=" pt-40 pb-40 relative bg-gradient-to-r from-green-50 to-green-100  ">
+    
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-green-600 to-green-800 inline-block text-transparent bg-clip-text">Contact Us</h1>
+          <p className="text-lg bg-gradient-to-r from-green-600 to-green-800 text-transparent bg-clip-text max-w-2xl mx-auto">
             Have questions about our spices? We'd love to hear from you. Send us a message
             and we'll respond as soon as possible.
           </p>
         </div>
 
+       {/* Decorative Elements */}
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div className="absolute top-40 left-0 w-40 h-40 bg-green-200 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+            <div className="absolute top-0 -left-70 w-40 h-40 bg-green-200 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+            <div className="absolute top-0 right-0 w-40 h-40 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+        </div>
+      
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Information */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+           <div className="bg-white rounded-2xl shadow-xl p-8 transform hover:scale-105 transition-transform duration-300">
+            <h2 className="text-2xl font-bold mb-8 text-gray-800">Contact Information</h2>
             
-            <div className="space-y-6">
+            <div className="space-y-8">
               <div className="flex items-start space-x-4">
-                <MapPin className="text-green-600 mt-1" size={24} />
+                <div className="bg-green-100 p-3 rounded-full">
+                  <MapPin className="text-green-600" size={24} />
+                </div>
                 <div>
-                  <h3 className="font-semibold">Address</h3>
-                  <p className="text-gray-600">123 Spice Market Street, Hyderabad, Telangana, 500081</p>
+                  <h3 className="font-semibold text-gray-800">Visit Us</h3>
+                  <p className="text-gray-600 mt-1">123 Spice Market Street, Hyderabad, Telangana, 500081</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
-                <Phone className="text-green-600 mt-1" size={24} />
+                <div className="bg-green-100 p-3 rounded-full">
+                  <Phone className="text-green-600" size={24} />
+                </div>
                 <div>
-                  <h3 className="font-semibold">Phone</h3>
-                  <p className="text-gray-600">+91 7330639555</p>
+                  <h3 className="font-semibold text-gray-800">Call Us</h3>
+                  <p className="text-gray-600 mt-1">+91 7330639555</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
-                <Mail className="text-green-600 mt-1" size={24} />
+                <div className="bg-green-100 p-3 rounded-full">
+                  <Mail className="text-green-600" size={24} />
+                </div>
                 <div>
-                  <h3 className="font-semibold">Email</h3>
-                  <p className="text-gray-600">contact@mahaspice.com</p>
+                  <h3 className="font-semibold text-gray-800">Email Us</h3>
+                  <p className="text-gray-600 mt-1">contact@mahaspice.com</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="bg-green-100 p-3 rounded-full">
+                  <Clock className="text-green-600" size={24} />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-800">Working Hours</h3>
+                  <p className="text-gray-600 mt-1">
+                    Monday - Saturday: 9:00 AM - 6:00 PM<br />
+                    Sunday: Closed
+                  </p>
                 </div>
               </div>
             </div>
