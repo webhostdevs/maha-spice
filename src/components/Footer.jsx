@@ -22,7 +22,7 @@ const Footer = () => {
                 placeholder="Subscribe to newsletter"
                 className="px-4 py-2 rounded-l-md focus:outline-none text-gray-800"
               />
-              <button className="bg-orange-600 px-4 py-2 rounded-r-md hover:bg-orange-700">
+              <button className="bg-green-600 px-4 py-2 rounded-r-md hover:bg-green-700">
                 <Send size={20} />
               </button>
             </div>
