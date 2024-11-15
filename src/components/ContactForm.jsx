@@ -31,12 +31,22 @@ const ContactForm = () => {
           </p>
         </div>
 
-       {/* Decorative Elements */}
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-            <div className="absolute top-40 left-0 w-40 h-40 bg-green-200 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-            <div className="absolute top-0 -left-70 w-40 h-40 bg-green-200 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-            <div className="absolute top-0 right-0 w-40 h-40 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-        </div>
+
+{/* Decorative Elements */}
+<div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+    {/* Top-left circle */}
+    <div className="absolute top-20 left-10 w-48 h-48 bg-green-200 rounded-full mix-blend-multiply filter blur-xl opacity-50"></div>
+    
+    {/* Top-right circle */}
+    <div className="absolute top-20 right-10 w-48 h-48 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-50"></div>
+    
+    {/* Bottom-left circle */}
+    <div className="absolute bottom-20 left-10 w-48 h-48 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-50"></div>
+    
+    {/* Bottom-right circle */}
+    <div className="absolute bottom-20 right-10 w-48 h-48 bg-green-200 rounded-full mix-blend-multiply filter blur-xl opacity-50"></div>
+</div>
+
       
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
