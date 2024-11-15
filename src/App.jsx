@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
 import Footer from './components/Footer';
-import ContactForm from 'ContactForm';
+import ContactForm from './components/ContactForm';
 
 function App() {
   const [count, setCount] = useState(0);

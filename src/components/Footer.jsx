@@ -9,9 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Social Media Links */}
           <div className="flex justify-center md:justify-start space-x-6">
-            <a href="#" className="hover:text-orange-400"><Facebook /></a>
-            <a href="#" className="hover:text-orange-400"><Instagram /></a>
-            <a href="#" className="hover:text-orange-400"><Youtube /></a>
+            <a href="#" className="hover:text-green-400"><Facebook /></a>
+            <a href="#" className="hover:text-green-400"><Instagram /></a>
+            <a href="#" className="hover:text-green-400"><Youtube /></a>
           </div>
 
           {/* Newsletter Subscription */}
