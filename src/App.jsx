@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
 import Footer from './components/Footer';
+import ContactForm from 'ContactForm';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             {/* Define routes here */}
             <Route path="/" element={<HomePage />} />
+            <Route path="contact" element={<ContactForm />} />
             {/* Add more routes as needed */}
           </Routes>
         </main>
